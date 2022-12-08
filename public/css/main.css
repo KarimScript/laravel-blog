@@ -1,0 +1,198 @@
+/*
+ https://images.pexels.com/photos/14011035/pexels-photo-14011035.jpeg?auto=compress&cs=tinysrgb&w=600 
+https://images.pexels.com/photos/1089440/pexels-photo-1089440.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load
+https://images.pexels.com/photos/11035390/pexels-photo-11035390.jpeg?auto=compress&cs=tinysrgb&w=600
+https://images.pexels.com/photos/4709289/pexels-photo-4709289.jpeg?auto=compress&cs=tinysrgb&w=600
+
+*/
+
+:root{
+    --blue : rgb(48, 62, 187);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+}
+
+
+footer{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:20px 70px
+}
+
+nav{
+    background-color: var(--blue);
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 60px;
+    color: white;
+}
+nav .auth a{
+    color: white;
+    text-decoration: none;
+}
+
+.user-welcome span{
+  color: rgb(2, 46, 75);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.container{
+    padding: 50px 60px;
+}
+
+.hero{
+    height: 500px;
+    background-image: url('https://images.pexels.com/photos/943096/pexels-photo-943096.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.hero h1{
+ font-size: 50px;
+
+}
+
+.hero .hero-btn{
+    background:var(--blue) ;
+    padding: 10px 30px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.header{
+    text-align: center;
+    padding:10px;
+    color: black;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid rgb(173, 173, 173);
+    padding-bottom: 40px;
+}
+
+.header .create-btn{
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: var(--blue);
+    display: inline-block;
+    margin-top: 30px;
+    color: white;
+}
+
+.posts-list{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 35px;
+  justify-content: center;
+}
+
+.post{
+  width:600px;
+ 
+}
+
+.post .image{
+    width: 100%;
+    height: 400px;
+}
+.post .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.post .title{
+    font-size: 30px;
+    margin-top: 10px;
+}
+
+.post .author{
+    font-size: 20px;
+}
+.post a{
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--blue);
+}
+
+
+
+
+/* form */
+
+.post-form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 600px;
+    margin:  0 auto;
+    background-color: rgb(240, 240, 240);
+    align-items: center;
+    padding: 20px;
+    border-radius: 10px;
+  
+  }
+  
+  .post-form div{
+      width: 70%;
+  }
+  .post-form input , .post-form textarea{
+      background: white;
+      border: 1px solid rgb(177, 177, 177);
+      padding: 15px 20px;
+      border-radius: 5px;
+      width: 100%;
+      resize: none;
+      margin-top: 5px;
+      font-size: 18px;
+  }
+  
+  .post-form button{
+      padding: 10px 20px;
+      background-color: var(--blue);
+      color: white;
+      font-size: 20px;
+      width: 70%;
+      cursor: pointer;
+  }
+
+  .post-details{
+    width: 100vw;
+    display: flex;
+    gap: 30px;
+  }
+  .post-details .image{
+    width: 40%;
+    height: 500px;
+  }
+  .post-details .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .post-details .text{
+    width: 50%;
+  }
